@@ -7,14 +7,14 @@
 - Modularized
 - Middleware
 
-###Ordered list
+### Ordered list
                 
 1. Clone/Fork this repo.
 2. Run composer install
 3. Add custom updated and custom env variables.
                 
 
-###ENV　
+### ENV　
 
 ```
 APP_TIMEZONE=Asia/Manila
