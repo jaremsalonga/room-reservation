@@ -7,16 +7,16 @@
 - Modularized
 - Middleware
 
-####Ordered list
+###Ordered list
                 
 1. Clone/Fork this repo.
 2. Run composer install
 3. Add custom updated and custom env variables.
                 
 
-####ENV　
+###ENV　
 
-```javascript
+```
 APP_TIMEZONE=Asia/Manila
 DB_CONNECTION=mysql
 DB_HOST=mysql-115180-0.cloudclusters.net
@@ -27,4 +27,4 @@ DB_PASSWORD=CRiUqnK6
 API_TOKEN=room-reservation
 ```
 
-###End
+##End
