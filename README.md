@@ -26,5 +26,3 @@ DB_USERNAME=admin
 DB_PASSWORD=CRiUqnK6
 API_TOKEN=room-reservation
 ```
-
-##End
