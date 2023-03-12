@@ -6,6 +6,7 @@
 - Service and Repository pattern.
 - Modularized
 - Middleware
+- Register, Login and Logout w/ token creation.
 
 ### Ordered list
                 
