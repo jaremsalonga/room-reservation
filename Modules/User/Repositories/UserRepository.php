@@ -4,7 +4,7 @@ namespace Modules\User\Repositories;
 
 use App\Repository\BaseRepository;
 
-use Modules\User\Entities\User;
+use App\Models\User;
 use Modules\User\Repositories\Interfaces\UserInterface;
 
 class UserRepository extends BaseRepository implements UserInterface {

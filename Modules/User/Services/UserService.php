@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Modules\User\Entities\User;
 use Modules\User\Repositories\Interfaces\UserInterface;
 
 class UserService {
@@ -63,7 +64,7 @@ class UserService {
         if($validateUser->fails()) {
             return response()->json([
                 'status' => false,
-                'message' => 'validation error',
+                'message' => 'Error',
                 'errors' => $validateUser->errors()
             ], 401);
         }
@@ -75,7 +76,7 @@ class UserService {
             ], 401);
         }
 
-        $user = $this->userRepository->findByKeyAndValue('email', $request->email);
+        $user = User::where('email', $request->email)->first();
 
         return response()->json([
             'status' => true,

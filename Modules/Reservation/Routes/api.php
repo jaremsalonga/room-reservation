@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/reservation', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('reserve')->group(function() {
+Route::middleware('auth:sanctum')->prefix('reserve')->group(function() {
     Route::post('/', [ReservationController::class, 'reserve']);
     Route::get('/export/{id}', [ReservationController::class, 'export']);
     Route::get('/unavailable-dates', [ReservationController::class, 'unavailableDates']);
